@@ -128,24 +128,46 @@ html {
 .info-box {
   width: 285px;
   height: 130px;
-  flex-shrink: 0;
-  background-color: white;
   color: #008445;
-  font-family: Rubik;
-  font-size: 14px;
-  font-style: normal;
-  line-height: normal;
-  text-transform: uppercase;
+  border-radius: 3px;
+  border: 0.3px solid #008445;
+  background: #FFF;
 }
+
+/* ===== ESTILIZAR OS PARÁGRAFOS ===== */
+.info-box p {
+  margin: 10px 0;         /* Espaçamento entre linhas */
+  font-size: 13px;        /* Tamanho da fonte */
+  font-weight: normal;    /* Peso da fonte */
+  line-height: 1.4;       /* Espaçamento entre linhas */
+  margin-left: 6%;
+  margin-top: 6%;
+  
+}
+
+/* ===== ESTILIZAR APENAS OS TÍTULOS===== */
+.info-box p strong {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 3px;   /* Pequeno espaço abaixo do título */
+  color: #008445;
+}
+
+/* ===== ÍCONE DE PERFIL ===== */
 
 .icon {
   width: 36px;
   height: 36px;
   flex-shrink: 0;
+  margin-left: 82%;
+  margin-top: -37%;
+  fill: #008445;
+
 }
 
 /* ===== BOTÕES ===== */
 .menu-item {
+
   width: 285px;
   height: 51.818px;
   border-radius: 3px;
@@ -170,6 +192,24 @@ html {
 .arrow {
   margin-left: auto;
   margin-top: 16px;
+}
+
+/* =====  ÍCONE LÁPIS DE GERAÇÃO DE RELATÓRIOS ===== */
+.icone-lapis {
+  width: 10px;
+  height: 10px;
+  margin-top: 17px;
+  margin-left: -80%;
+  fill: #008445;
+}
+
+
+/* =====  ÍCONE SETA DO CADASTRO ===== */
+.icone-seta {
+  width: 14px;
+  height: 13px;
+  margin-left: 40%;
+  fill: #008445;
 }
 
 /* ===== QUADRADO BRANCO ===== */
