@@ -27,3 +27,16 @@ document.addEventListener('click', (e) => {
     menuToggle.classList.remove('hidden');
   }
 });
+
+const btnCadastros = document.getElementById("setaCadastros");
+const subBotoes = document.getElementById("subBotoes");
+const setaCadastros = document.getElementById("setaCadastros");
+
+btnCadastros.addEventListener("click", (e) => {
+  e.stopPropagation(); // evita fechar o menu ao clicar
+
+  const aberto = subBotoes.style.display === "block";
+
+  subBotoes.style.display = aberto ? "none" : "block";
+  setaCadastros.classList.toggle("aberta");
+});
