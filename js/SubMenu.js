@@ -28,15 +28,10 @@ document.addEventListener('click', (e) => {
   }
 });
 
+// Abre os subbotões de cadastro e faz a seta girar
 const btnCadastros = document.getElementById("setaCadastros");
-const subBotoes = document.getElementById("subBotoes");
-const setaCadastros = document.getElementById("setaCadastros");
+const menuCadastros = document.querySelector(".menu-cadastros");
 
-btnCadastros.addEventListener("click", (e) => {
-  e.stopPropagation(); // evita fechar o menu ao clicar
-
-  const aberto = subBotoes.style.display === "block";
-
-  subBotoes.style.display = aberto ? "none" : "block";
-  setaCadastros.classList.toggle("aberta");
-});
+btnCadastros.onclick = () => {
+  menuCadastros.classList.toggle("open");
+};

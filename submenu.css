@@ -173,7 +173,6 @@ html {
 
 /* ===== BOTÕES ===== */
 .menu-item {
-
   width: 285px;
   height: 51.818px;
   border-radius: 3px;
@@ -210,16 +209,13 @@ html {
   fill: #008445;
 }
 
-
 /* =====  ÍCONE SETA DO CADASTRO ===== */
 .icone-seta {
   width: 14px;
   height: 13px;
   margin-left: 40%;
   fill: #008445;
-
 }
-
 
 /* ===== QUADRADO BRANCO ===== */
 .white-box {
@@ -250,25 +246,65 @@ body.blurred::before {
   
 }
 
-/* ===== SUB-BOTÕES ===== */
-#subBotoes .menu-item {
+/* ===== CONTAINER PRINCIPAL ===== */
+.menu-cadastros {
   width: 285px;
-  height: 51.818px;
-  border-radius: 3px;
-  border: 0.3px solid #008445;
-  color: #008445;
-  font-family: Rubik;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
-  display: flex; /* alinha SVG e texto em linha */
-  align-items: center; /* centraliza verticalmente */
-  gap: 8px; /* espaço entre ícone e texto */
-  padding: 0 16px;
+  font-family: sans-serif;
+}
+
+
+/* Ajuste da seta */
+.icone-seta {
+  margin-left: 40%;
+  transition: transform 0.3s ease;
+}
+
+/* Quando aberto: seta gira */
+.menu-cadastros.open .icone-seta {
+  transform: rotate(180deg);
+}
+
+/* ===== SUBBOTÕES ===== */
+.sub-menu {
+  display: none;      /* FICA INVISÍVEL ATÉ CLICAR */
+  flex-direction: column;
+  width: 100%;
+  border-left: 1px solid #008445;
+  border-right: 1px solid #008445;
+  border-bottom: 1px solid #008445;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+  
+}
+
+/* Quando estiver aberto */
+.menu-cadastros.open .sub-menu {
+  display: flex;
+}
+
+/* ===== SUB-BOTÕES ===== */
+.sub-btn {
+  background: #ffffff;
+  border: none;
+  border-bottom: 1px solid #008445;
+  border-radius: 0;
+  padding: 10px;
+  color: #006c39;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   cursor: pointer;
-  margin-top: 5px;
+}
+
+/* Remove borda do último botão */
+.sub-btn:last-child {
+  border-bottom: none;
+}
+
+/* ===== HOVER ===== */
+.menu-item:hover,
+.sub-btn:hover {
+  background: #E9F5E8;
 }
 
 /* =====  ÍCONE LÁPIS DE CADASTRO DE EQUIPAMENTO ===== */
@@ -276,7 +312,7 @@ body.blurred::before {
   width: 10px;
   height: 10px;
   margin-top: 17px;
-  margin-left: -91%;
+  margin-left: -89%;
   fill: #008445;
 }
 
@@ -285,16 +321,15 @@ body.blurred::before {
   width: 10px;
   height: 10px;
   margin-top: 17px;
-  margin-left: -79%;
+  margin-left: -78%;
   fill: #008445;
 }
 
-/* Animação de giro da seta */
-.icone-seta {
-  transition: transform 0.3s ease;
+/* =====  ÍCONE LÁPIS DE CADASTRO DE PLATAFORMA ===== */
+.icone-lapis3 {
+  width: 10px;
+  height: 10px;
+  margin-top: 17px;
+  margin-left: -83%;
+  fill: #008445;
 }
-
-.icone-seta.aberta {
-  transform: rotate(180deg);
-}
-
