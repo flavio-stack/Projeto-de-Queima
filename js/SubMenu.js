@@ -29,9 +29,11 @@ document.addEventListener('click', (e) => {
 });
 
 // Abre os subbotões de cadastro e faz a seta girar
-const btnCadastros = document.getElementById("setaCadastros");
+const btnCadastros = document.getElementById("btnCadastros");
 const menuCadastros = document.querySelector(".menu-cadastros");
 
 btnCadastros.onclick = () => {
-  menuCadastros.classList.toggle("open");
+  menuCadastros.classList.toggle("open");     // mostra/esconde submenu
+  btnCadastros.classList.toggle("active");    // remove ou adiciona a borda
 };
+
