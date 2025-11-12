@@ -29,7 +29,7 @@ document.addEventListener('click', (e) => {
 });
 
 // Abre os subbotões de cadastro e faz a seta girar
-const btnCadastros = document.getElementById("btnCadastros");
+const btnCadastros = document.getElementById("setaCadastros");
 const menuCadastros = document.querySelector(".menu-cadastros");
 
 btnCadastros.onclick = () => {
