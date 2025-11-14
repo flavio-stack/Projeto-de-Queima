@@ -15,7 +15,7 @@ html {
 .fundo {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(117deg, #006233, #238b3b, #86a244, #f2b544);
+  background:  linear-gradient(-45deg, #F2B544, #86A244, #238B3B, #006233 );
   position: relative;
   overflow: hidden;
 }
@@ -79,7 +79,7 @@ html {
   width: 341px;
   height: 100vh;
   flex-shrink: 0;
-  background: linear-gradient(135deg, #1f8b45 0%, #4ba64a 50%, #e0b64b 100%);
+  background:  linear-gradient(-45deg, #F2B544, #86A244, #238B3B, #006233 );
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -258,6 +258,7 @@ body.blurred::before {
 .icone-seta {
   margin-left: 40%;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 /* Quando aberto: seta gira */
@@ -353,7 +354,6 @@ body.blurred::before {
   align-items: center; /* centraliza verticalmente */
   gap: 8px; /* espaço entre ícone e texto */
   padding: 0 16px;
-  cursor: pointer;
   background: #FFF;
 }
 
